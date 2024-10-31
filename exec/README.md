@@ -1,6 +1,4 @@
-# Treasure Trove of Linux
-
-## The `exec` family of functions
+# The `exec` family of functions
 
 > The `exec` family of functions in C is used to execute a new program, *replacing the current process image with a new process image*. They are commonly used after a `fork()` to replace the child process's image with a new program.
 
@@ -15,7 +13,7 @@
      - Subsequent arguments (`arg1`, `arg2`, ..., `NULL`): Arguments to the program, ending with `NULL`.
    - **Return Value:** Returns `-1` on error; does not return on success (the process image is replaced).
    
-   -**Example:**
+   - **Example:**
     ```c
     else if (pid == 0) {
         // The child process gets a new process image to execute "ls -l" command
